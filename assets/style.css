@@ -262,7 +262,7 @@ span {
 .grid-cert-item:after {
     width: 200%;
     position: absolute;
-    top: 30px;
+    top: 16px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
