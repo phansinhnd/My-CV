@@ -275,11 +275,11 @@ span {
 }
 
 .grid__column-3-cert:nth-child(2) .grid-cert-item:after {
-    content: 'JS BASIS';
+    content: 'BASIC JS';
 }
 
 .grid__column-3-cert:last-child .grid-cert-item:after {
-    content: 'JS NÂNG CAO';
+    content: 'ADVANCED JS';
 }
 
 .grid-cert-btn {
