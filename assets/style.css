@@ -94,7 +94,7 @@ html {
     position: relative;
     background: url(images/star3.gif) center / contain repeat, linear-gradient(70.06deg, #f44150 -5%, #480ab9 106%);
     color: var(--text-color);
-    padding: 0 3.2rem 1.5rem;
+    padding: 0 3.2rem 3.5rem;
     width: 340px;
     text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 1px black;
 }
@@ -299,15 +299,19 @@ span {
         display: block;
         margin: 0;
     }
-.grid__row {
-    display: block;
-}
-.grid__column-3 {
-    width: 100%;
-}
-.grid__column-3 + .grid__column-3 {
-    margin-top: 20px;
-}
+
+    .grid__row {
+        display: block;
+    }
+
+    .grid__column-3 {
+        width: 100%;
+    }
+
+    .grid__column-3+.grid__column-3 {
+        margin-top: 20px;
+    }
+
     .sidebar {
         width: 100%;
     }
