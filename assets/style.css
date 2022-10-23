@@ -95,7 +95,7 @@ html {
     background: url(images/star3.gif) center / contain repeat, linear-gradient(70.06deg, #f44150 -5%, #480ab9 106%);
     color: var(--text-color);
     padding: 0 3.2rem 1.5rem;
-    width: 350px;
+    width: 340px;
     text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 1px black;
 }
 
