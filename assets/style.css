@@ -15,6 +15,7 @@
     color: white;
     background: #f05123;
 }
+
 a {
     text-decoration: none;
 }
@@ -24,9 +25,6 @@ html {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
-
-
-
 
 /* Common */
 .text-h1 {
@@ -42,18 +40,6 @@ html {
     text-shadow: 0px 1px black, 1px 0px black, 0px -1px black, -1px 0px black;
 }
 
-/* .text-h3::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    content: '';
-    display: block;
-    width: 4px;
-    height: 2.2rem;
-    background-color: white;
-} */
-
 .text-h4 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -62,7 +48,6 @@ html {
 
 .text-p {
     font-size: 1.5rem;
-    margin-bottom: ;
 }
 
 .center {
@@ -104,10 +89,6 @@ html {
     padding-right: 8px;
 }
 
-
-
-.grid__column-3-cert {}
-
 /* sidebar */
 .sidebar {
     position: relative;
@@ -126,25 +107,24 @@ html {
     font-size: 40px;
     font-weight: bold;
     opacity: .1;
-
 }
 
 .profile-img {
     position: relative;
-    /* background-color: var(--primary-color); */
     width: 120px;
     height: 120px;
     margin: auto;
     background: url(images/logo-text-4.png) center / contain no-repeat, white;
     margin-bottom: 1.5rem;
-    /* font-weight: 600; */
     border-radius: 50%;
     text-shadow: 1px 2px 2px black;
-    animation: fadeIn  2.5s linear infinite;
+    animation: fadeIn 2.5s linear infinite;
 }
 
 @keyframes fadeIn {
-    0%, 100%{
+
+    0%,
+    100% {
         box-shadow: none;
     }
 
@@ -186,17 +166,6 @@ ion-icon {
     color: rgba(255, 255, 255, .7);
 }
 
-.wrapper-hobbies {
-    padding: 3.2rem 0 1.5rem;
-}
-
-.wrapper-hobbies p {
-    justify-content: space-between;
-
-}
-
-
-
 .sidebar a {
     color: var(--text-color);
 }
@@ -217,17 +186,12 @@ span {
 .container {
     width: calc(100% - 350px);
     padding: 32px;
-    background: url(depositphotos_47372005-stock-illustration-orange-blue-background-with-triagles.jpg) center / 100% no-repeat;
-
 }
-
 
 .wrapper-right {
     padding: 16px 0px 16px;
     border-bottom: 1px solid var(--primary-color);
 }
-
-
 
 .text-h4-right--underline {
     text-decoration: underline;
@@ -298,7 +262,6 @@ span {
     user-select: none;
 }
 
-
 .grid-cert-btn:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -320,6 +283,7 @@ span {
     margin-bottom: 0.4rem;
     text-decoration: underline;
 }
+
 .grid__column-3-cert:nth-child(2) .grid-cert-btn,
 .grid__column-3-cert:nth-child(3) .grid-cert-btn {
     display: none;
@@ -333,8 +297,17 @@ span {
 
     .grid {
         display: block;
+        margin: 0;
     }
-
+.grid__row {
+    display: block;
+}
+.grid__column-3 {
+    width: 100%;
+}
+.grid__column-3 + .grid__column-3 {
+    margin-top: 20px;
+}
     .sidebar {
         width: 100%;
     }
