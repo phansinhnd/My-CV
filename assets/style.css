@@ -272,7 +272,7 @@ span {
 }
 
 .grid__column-3-cert:first-child .grid-cert-item:after {
-    content: 'HTML+CSS';
+    content: 'HTML & CSS';
 }
 
 .grid__column-3-cert:nth-child(2) .grid-cert-item:after {
