@@ -249,6 +249,7 @@ span {
 
 .grid-cert-item {
     position: relative;
+    display: block;
     width: 100%;
     padding-top: 71.95%;
     background-size: contain;
@@ -297,6 +298,7 @@ span {
     user-select: none;
 }
 
+
 .grid-cert-btn:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -317,6 +319,10 @@ span {
     margin-top: 1rem;
     margin-bottom: 0.4rem;
     text-decoration: underline;
+}
+.grid__column-3-cert:nth-child(2) .grid-cert-btn,
+.grid__column-3-cert:nth-child(3) .grid-cert-btn {
+    display: none;
 }
 
 /* responsive */
