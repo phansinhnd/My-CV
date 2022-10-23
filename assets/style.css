@@ -23,40 +23,12 @@ a {
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    line-height: 1.15;
 }
 
 /* Common */
-.text-h1 {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    text-shadow: 0px 1px black, 1px 0px black, 0px -1px black, -1px 0px black;
-}
-
-.text-h3 {
-    font-size: 2.2rem;
-    padding-left: 1.8rem;
-    position: relative;
-    text-shadow: 0px 1px black, 1px 0px black, 0px -1px black, -1px 0px black;
-}
-
-.text-h4 {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-top: 1rem;
-}
-
-.text-p {
-    font-size: 1.5rem;
-}
-
-.center {
-    text-align: center;
-}
-
-.centerItem {
-    display: flex;
-    align-items: center;
+.section-wrapper {
+    padding: 16px 32px;
 }
 
 .wrapper {
@@ -89,12 +61,48 @@ html {
     padding-right: 8px;
 }
 
+.text-h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 0px 1px black, 1px 0px black, 0px -1px black, -1px 0px black;
+}
+
+.text-h3 {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 1.8rem;
+    font-size: 2.2rem;
+}
+
+.text-h4 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+.text-p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.centerItem {
+    display: flex;
+    align-items: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
 /* sidebar */
 .sidebar {
     position: relative;
     background: url(images/star3.gif) center / contain repeat, linear-gradient(70.06deg, #f44150 -5%, #480ab9 106%);
     color: var(--text-color);
-    padding: 0 3.2rem 3.5rem;
     width: 340px;
     text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 1px black;
 }
@@ -157,7 +165,7 @@ html {
 }
 
 .text-h3--heading {
-    margin-bottom: 20px;
+    text-shadow: 0px 1px black, 1px 0px black, 0px -1px black, -1px 0px black;
 }
 
 ion-icon {
@@ -174,22 +182,16 @@ ion-icon {
     color: rgba(255, 255, 255, .5);
 }
 
-span {
-    display: inline-block;
-    width: 110px;
-
-    display: flex;
-    align-items: center;
+.section-wrapper .wrapper:last-child {
+    border-bottom: none;
 }
 
 /* container */
 .container {
     width: calc(100% - 350px);
-    padding: 32px;
 }
 
 .wrapper-right {
-    padding: 16px 0px 16px;
     border-bottom: 1px solid var(--primary-color);
 }
 
@@ -231,7 +233,7 @@ span {
     width: 100%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -249,10 +251,11 @@ span {
 
 .grid-cert-btn {
     position: absolute;
-    top: 70px;
+    top: 45%;
     left: 50%;
+    width: fit-content;
     transform: translateX(-50%);
-    padding: 10px 8px;
+    padding: 10px 16px;
     border-radius: 50px;
     color: white;
     text-align: center;
@@ -268,19 +271,16 @@ span {
 }
 
 .text-h3-right {
+    padding-left: 0;
     font-size: 2rem;
-    line-height: 1.2;
     text-transform: uppercase;
     color: var(--primary-color);
-    margin-bottom: 1rem;
-
 }
 
 .text-h4-right {
     font-size: 1.8rem;
     line-height: 1.5;
-    margin-top: 1rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 6px;
     text-decoration: underline;
 }
 
@@ -293,6 +293,14 @@ span {
 @media(max-width: 740px) {
     html {
         font-size: 60%;
+    }
+
+    .main {
+        margin-top: 0;
+    }
+
+    .sidebar {
+        width: 100%;
     }
 
     .grid {
@@ -309,19 +317,39 @@ span {
     }
 
     .grid__column-3+.grid__column-3 {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
-    .sidebar {
-        width: 100%;
-    }
-
-    .main {
-        margin-top: 0;
+    .grid-cert-item {
+        border-radius: unset;
     }
 
     .container-mobile {
         width: 100%;
+    }
+
+    .grid-cert-item::after {
+        display: none;
+    }
+
+    .grid-cert-btn {
+        display: none;
+    }
+
+    .text-p-cert {
+        line-height: 1.6;
+    }
+
+    .grid__column-3-cert:nth-child(1) .grid-cert-item {
+        background-image: url(images/cert/html_css.png) !important;
+    }
+
+    .grid__column-3-cert:nth-child(2) .grid-cert-item {
+        background-image: url(./images/cert/html_css.png) !important;
+    }
+
+    .grid__column-3-cert:nth-child(3) .grid-cert-item {
+        background-image: url(./images/cert/html_css.png) !important;
     }
 
     @media(max-width: 300px) {
