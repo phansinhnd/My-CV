@@ -99,6 +99,7 @@ html {
     margin-bottom: 0;
 }
 
+
 /* sidebar */
 .sidebar {
     position: relative;
@@ -129,6 +130,7 @@ html {
     text-shadow: 1px 2px 2px black;
     animation: fadeIn 2.5s linear infinite;
 }
+
 
 @keyframes fadeIn {
 
@@ -190,6 +192,8 @@ ion-icon {
 /* container */
 .container {
     flex-grow: 1;
+    position: relative;
+    overflow: hidden;
 }
 
 .wrapper-right {
@@ -285,12 +289,129 @@ ion-icon {
     text-decoration: underline;
 }
 
+.bd-0 {
+    border-bottom: unset;
+}
+
+/*--------- Bubble ------------*/
+.bubble {
+    position: absolute;
+    bottom: 200px;
+    right: 200px;
+    width:200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, .2);
+    animation: myBubble 5s linear infinite;
+    zoom: .2;
+    z-index: -1;
+}
+
+.bubble::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+.bubble::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(2px);
+}
+
+@keyframes myBubble {
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.bubble span {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bubble span:nth-child(1) {
+    border-left: 15px solid rgb(15, 180, 255);
+    inset: 5px;
+    filter: blur(9px);
+}
+
+.bubble span:nth-child(2) {
+    border-right: 15px solid pink;
+    inset: 5px;
+    filter: blur(15px);
+}
+
+.bubble span:nth-child(3) {
+    border-top: 15px solid yellow;
+    inset: 20px;
+    filter: blur(9px);
+}
+
+.bubble span:nth-child(4) {
+    border-left: 15px solid red;
+    inset: 25px;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(5) {
+    border-bottom: 10px solid white;
+    inset: 5px;
+    filter: blur(15px);
+    transform: rotate(320deg);
+}
+
+.bubble:nth-child(5) {
+    zoom: 0.06;
+    background-color: transparent;
+    bottom: 900px;
+    right: 1100px;
+}
+
+.bubble:nth-child(6) {
+    zoom: 0.1;
+    bottom: 1100px;
+    right: 400px;
+    animation: myBubble 5s linear infinite;
+}
+
+.bubble:nth-child(7) {
+    zoom: .2;
+    bottom: 300px;
+    right: 500px;
+}
+
+.bubble:nth-child(8) {
+    zoom: 0.1;
+    bottom: 1000px;
+    right: 1200px;
+}
+
+
 /* responsive */
 @media(min-width: 1024px) and (max-width: 1239px) {
     .grid {
         width: 984px;
     }
-
 }
 
 @media(max-width: 1023px) and (min-width: 790px) {
