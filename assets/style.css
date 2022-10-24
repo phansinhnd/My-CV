@@ -285,10 +285,6 @@ ion-icon {
     text-decoration: underline;
 }
 
-.grid__column-3-cert:nth-child(3) .grid-cert-btn {
-    display: none;
-}
-
 /* responsive */
 @media(min-width: 1024px) and (max-width: 1239px) {
     .grid {
@@ -372,7 +368,7 @@ ion-icon {
     }
 
     .grid__column-3-cert:nth-child(3) .grid-cert-item {
-        background-image: url(./images/cert/html_css.png) !important;
+        background-image: url(./images/cert/Advanced-JavaScript.png) !important;
     }
 
     @media(max-width: 300px) {
