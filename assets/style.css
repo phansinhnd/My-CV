@@ -389,21 +389,21 @@ ion-icon {
 
 .bubble:nth-child(6) {
     zoom: 0.1;
-    bottom: 1100px;
-    right: 400px;
+    bottom: 350px;
+    right: 640px;
     animation: myBubble 5s linear infinite;
 }
 
 .bubble:nth-child(7) {
     zoom: .2;
     bottom: 300px;
-    right: 500px;
+    right: 420px;
 }
 
 .bubble:nth-child(8) {
     zoom: 0.1;
-    bottom: 1000px;
-    right: 1200px;
+    bottom: 550px;
+    right: 760px;
 }
 
 /* responsive */
