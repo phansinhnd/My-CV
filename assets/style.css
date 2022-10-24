@@ -229,7 +229,7 @@ ion-icon {
 
 .grid-cert-item:after {
     position: absolute;
-    top: 16px;
+    top: 16%;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -285,7 +285,6 @@ ion-icon {
     text-decoration: underline;
 }
 
-.grid__column-3-cert:nth-child(2) .grid-cert-btn,
 .grid__column-3-cert:nth-child(3) .grid-cert-btn {
     display: none;
 }
