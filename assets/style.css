@@ -178,11 +178,12 @@ ion-icon {
 }
 
 .sidebar a {
+    user-select: none;
     color: var(--text-color);
 }
 
 .sidebar a:hover {
-    color: rgba(255, 255, 255, .5);
+    color: #ccc;
 }
 
 .section-wrapper .wrapper:last-child {
