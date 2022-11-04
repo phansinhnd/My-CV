@@ -78,24 +78,23 @@
                     </p>
                     <ul class="grid__row grid__row--cert">
                         <li class="grid__column-3 grid__column-3-cert">
-                            <a href="assets/images/cert/html_css.png" target="tb_blank " class="grid-cert-item"
+                            <label for="cert-html" class="grid-cert-item"
                                 style="background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(assets/images/cert/html_css.png)">
                                 <div class="grid-cert-btn">CLICK ME</div>
-                            </a>
+                            </label>
                         </li>
                         <li class="grid__column-3 grid__column-3-cert">
-                            <a href="assets/images/cert/Basic-JavaScript.png" target="tb_blank" class="grid-cert-item"
+                            <label for="cert-basic-js" class="grid-cert-item"
                                 style="background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('assets/images/cert/Basic-JavaScript.png')">
-                                <div href="" class="grid-cert-btn">CLICK ME
-                                </div>
-                            </a>
+                                <div class="grid-cert-btn">CLICK ME
+                            </label>
+                            </label>
                         </li>
                         <li class="grid__column-3 grid__column-3-cert">
-                            <a href="assets/images/cert/Advanced-JavaScript.png" target="tb_blank"
-                                class="grid-cert-item"
+                            <label for="cert-advanced-js" class="grid-cert-item"
                                 style="background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('assets/images/cert/Advanced-JavaScript.png')">
                                 <div class="grid-cert-btn">CLICK ME</div>
-                            </a>
+                            </label>
                         </li>
                     </ul>
                 </section>
@@ -171,16 +170,35 @@
     <!-- <div class="modal">
             <img src="assets/images/modal.gif" alt="modal">
         </div> -->
+    <div class="modal">
+        <input type="checkbox" name="modal-cert" id="cert-html" unchecked hidden>
+        <input type="checkbox" id="cert-basic-js" unchecked hidden>
+        <input type="checkbox" id="cert-advanced-js" unchecked hidden>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <label for="cert-html" class="modal__overlay">
+            <div class="modal__cert-item  modal__cert-item--html"></div>
+        </label>
+
+        <label for="cert-basic-js" class="modal__overlay">
+            <div class="modal__cert-item  modal__cert-item--basic-js"></div>
+        </label>
+
+        <label for="cert-advanced-js" class="modal__overlay">
+            <div class="modal__cert-item  modal__cert-item--advanced-js"></div>
+        </label>
+
+    </div>
+
+    <script type=" module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+                        </script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Hide modal -->
     <script>
-        var modal = document.querySelector('.modal');
-        function hideModal() {
-            modal.style.display = 'none';
-        }
-        setTimeout(hideModal, 2000);
+        // var modal = document.querySelector('.modal');
+        // function hideModal() {
+        //     modal.style.display = 'none';
+        // }
+        // setTimeout(hideModal, 2000);
     </script>
 </body>
 
